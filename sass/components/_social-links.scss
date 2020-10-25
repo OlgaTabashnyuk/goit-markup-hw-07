@@ -2,32 +2,31 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    
-}
-.social-list .link {
-    display: flex;
-    width: 44px;
-    height: 44px; 
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-}
-.social-list .item + .item {
-    margin-left: 10px;
+
+     & .link {
+        display: flex;
+        width: 44px;
+        height: 44px; 
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: $accent-color;   
+        }
+        &:hover .icon {
+            fill:#FFFFFF;
+        }
+    }
+     & .item + .item {
+         margin-left: 10px;
+        }
+        & .icon {
+            width: 20px;
+            height: 20px;
+            fill: $link-color;
+            cursor: pointer;
+        }
 }
 
-.social-list .icon {
-    width: 20px;
-    height: 20px;
-    fill: $link-color;
-    cursor: pointer;
-   
-}
-.social-list .link:hover {
-    background-color: $accent-color;
-    
-}
-.social-list .link:hover .icon {
-    fill: #FFFFFF;
-}

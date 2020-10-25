@@ -19,6 +19,10 @@
     display: flex;
     width: 1200px;
     justify-content: center;
+    
+        & .item + .item { 
+            margin-left: 8px;
+    }
  }
 
 
@@ -35,15 +39,20 @@
     text-align: center;
     color: $title-text-color;
     background-color:  #F5F4FA;
-    border: none;      
+    border: none;   
+    
+    &:hover {
+        background-color: $accent-color;
+        color: white;
+        cursor: pointer;
+    } 
+    :focus {
+        background-color: $accent-color;
+        color: white;
+        cursor: pointer;
+    }   
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    background-color: $accent-color;
-    color: white;
-    cursor: pointer;
-}  
 .portfolio-container .item + .item { 
     margin-left: 8px;
 }
