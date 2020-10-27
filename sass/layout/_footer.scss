@@ -15,9 +15,7 @@
         align-items: flex-start;        
     }
 }
- 
-
-//  FOOTER - LOGO
+ //  FOOTER - LOGO
 
 .footer-logo {
     display: block;
@@ -43,43 +41,40 @@
     }
 }
 
-.footer-address-item  li {
-    display: block;
-    margin-bottom: 9px;
-}
-.footer-address-item-link {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-        &:hover { 
-            color: $accent-color;
-        }
-        &:focus { 
-            color: $accent-color;
-        }
-
-}
-
-.footer-address-contact-link {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: $primary-text-color;
-        &:hover,
-        &:focus {
-        color: $accent-color;
+.footer-address {
+    &-item  li {
+        display: block;
+        margin-bottom: 9px;
+    }
+    &-item-link {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+            &:hover { 
+                color: $accent-color;
+            }
+            &:focus { 
+                color: $accent-color;
+            }
+    }
+    &-contact-link {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
     }
 }
-    
-
 
 //  FOOTER SOCIALS
 
@@ -106,6 +101,7 @@
         &:hover {
             background-color: $accent-color; 
         }
+    
     }
 }
 
@@ -119,10 +115,7 @@
     margin-bottom: 20px;
     color: #FFFFFF;
 }
-// .footer-socials .social-list .link:hover {
-//     background-color: $accent-color;
-    
-// }
+
 .footer-socials .social-list .icon {
     width: 20px;
     height: 20px;
@@ -138,36 +131,51 @@
      height: 86px;
      margin-top: 72px;
      margin-left: 93px;  
- }
-.subscribe-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.subscribe-form {
-   display: flex;
-   flex-direction: row; 
-}
-.subscribe-form_input {
-    display: inline-block;
-    margin-top: 20px;
-    padding-left: 16px;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: transparent;
+
+     &-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &-form {
+        display: flex;
+        flex-direction: row; 
+    }
+    &-form_input {
+        display: inline-block;
+        margin-top: 20px;
+        padding-left: 16px;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: transparent;
+    }
+    &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 12px;
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background-color: $accent-color;
+    }
 }
 .email {
     font-weight: normal;
@@ -176,21 +184,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 12px;
-    width: 200px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: $accent-color;
-}
+
 .submit-icon {
     margin-left: 10px;
     fill: #ffffff;
